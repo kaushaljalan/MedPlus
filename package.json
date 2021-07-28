@@ -1,0 +1,47 @@
+{
+  "name": "medeasy",
+  "version": "1.0.0",
+  "description": "Medeasy ecommerce store",
+  "main": "server.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "node server.js",
+    "start": "nodemon server.js",
+    "dev": "concurrently \"npm run client\" \"npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunguru98/Medeasy.git"
+  },
+  "author": "Harish Akira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunguru98/Medeasy/issues"
+  },
+  "homepage": "https://github.com/sunguru98/Medeasy#readme",
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@paypal/checkout-server-sdk": "^1.0.2",
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "coinbase-commerce-node": "^1.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.0",
+    "fs-extra": "^8.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.13",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "node-sass": "^4.13.0",
+    "nodemailer": "^6.3.1",
+    "razorpay": "^2.0.5",
+    "rimraf": "^3.0.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4"
+  }
+}
